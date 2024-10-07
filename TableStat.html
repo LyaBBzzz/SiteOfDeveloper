@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
     <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
       <title>Информация</title>
     </head>
     <body>
@@ -32,9 +33,9 @@
   </td>
 
   <td>
-    <input type="checkbox" name="language"> Количество объектов за год <br>
-    <input type="checkbox" name="language"> Максимальный бюджет <br>
-    <input type="checkbox" name="language"> Минимальный бюджет <br>
+    <input type="checkbox" name="colvoObj"> Количество объектов за год <br>
+    <input type="checkbox" name="maxmon"> Максимальный бюджет <br>
+    <input type="checkbox" name="minmon"> Минимальный бюджет <br>
   </td>
 </tr>
 </table>
@@ -52,25 +53,25 @@
 
   <form>
     <p>
-      Название: <input type="name" placeholder="Введите название">
+      Название: <input type="text" placeholder="Введите название">
     </p>
     <p>
-      Тип: <input type="type" placeholder="Введите тип объекта">
+      Тип: <input type="text" placeholder="Введите тип объекта">
     </p>
     <p>
-      Страна: <input type="Country" placeholder="Введите страну">
+      Страна: <input type="text" placeholder="Введите страну">
     </p>
     <p>
-      Год: от <input type="Year" placeholder="2000"> до <input type="Year" placeholder="2025">
+      Год: от <input type="text" placeholder="2000"> до <input type="text" placeholder="2025">
     </p>
     <p>
-      Бюджет: от <input type="Money" placeholder="300 млн"> до <input type="Money" placeholder="5 млрд">
+      Бюджет: от <input type="text" placeholder="300 млн"> до <input type="text" placeholder="5 млрд">
     </p>
     <p>
-      Этажи: от <input type="Floors" placeholder="10"> до <input type="Floors" placeholder="100">
+      Этажи: от <input type="text" placeholder="10"> до <input type="text" placeholder="100">
     </p>
     <p>
-      Квартиры: от <input type="flats" placeholder="100"> до <input type="flats" placeholder="500">
+      Квартиры: от <input type="text" placeholder="100"> до <input type="text" placeholder="500">
     </p>
   </form>
 
@@ -128,7 +129,7 @@
 </details>
 
 <p></p>
-<table border="2" cellspacing="0" cellpadding="7" bordercolor="black">
+<table border="2" cellspacing="0" cellpadding="7">
   
   <tr>
     <th>Название ЖК</th>
