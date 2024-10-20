@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <title>Информация</title>
+    </head>
+    <body>
+
+        
+        <a name="Stat"></a>
+        <p>
+          <a href="Main.html#main">Наши объекты</a><br>
+          <a href="TableStat.html#Stat"><strong>Информация о наших объектах</strong></a>
+        </p>
+      <hr>   
+
+        
+<details> 
+  <summary>График</summary>
+
+<table cellpadding="5">
+  <tr> 
+    <th>Значение по оси OX</th>
+    <th>Результат</th>
+  </tr>
+
+  <tr>
+    <td>
+      <input  type="radio"  name="Type">Тип объекта<br>
+    <input  type="radio"  name="Money">Год постройки<br>
+    <input  type="radio"  name="Floors">Страна<br>
+  </td>
+
+  <td>
+    <input type="checkbox" name="colvoObj"> Количество объектов за год <br>
+    <input type="checkbox" name="maxmon"> Максимальный бюджет <br>
+    <input type="checkbox" name="minmon"> Минимальный бюджет <br>
+  </td>
+</tr>
+</table>
+
+<p>
+  <input type="submit" value="Построить">
+</p>
+<p>Здесь будет график</p>
+
+</details>
+
+
+<details> 
+  <summary>Фильтр</summary>
+
+  <form>
+    <p>
+      Название объекта: <input type="text" placeholder="Введите название">
+    </p>
+    <p>
+      Тип объекта: <input type="text" placeholder="Введите тип объекта">
+    </p>
+    <p>
+      Страна потройки: <input type="text" placeholder="Введите страну">
+    </p>
+    <p>
+      Год постройки: от <input type="number" min="2000" max="2025" placeholder="2000"> до <input type="number" min="2000" max="2025" placeholder="2025">
+    </p>
+    <p>
+      Бюджет стройки: от <input type="number" min="300" max="5000" placeholder="300"> млн до <input type="number" min="300" max="5000" placeholder="5000"> млн
+    </p>
+    <p>
+      Кол-во этажей: от <input type="number" min="10" max="100" placeholder="10"> до <input type="number" min="10" max="100" placeholder="100">
+    </p>
+    <p>
+      Кол-во квартир: от <input type="number" min="100" max="500" placeholder="100"> до <input type="number" min="100" max="500" placeholder="500">
+    </p>
+  </form>
+
+  <input type="submit" value="Найти">
+  <p></p>
+
+</details>
+
+
+<details> 
+  <summary>Сортировка</summary>
+
+   Первый уровень: <select name="1lvl">
+    <option value="NO" selected> Нет </option>
+    <option value="name"> Название объекта </option>
+    <option value="type"> Тип объекта </option>
+    <option value="Country"> Страна </option>
+    <option value="Year"> Год постройки </option>
+    <option value="Money" > Бюджет </option>
+    <option value="Floors"> Количество этажей </option>
+    <option value="flats"> Количество квартир </option>
+   </select>
+   по убыванию? <input type="checkbox" name="1lvl">
+   <br>
+
+   Второй уровень: <select name="2lvl">
+    <option value="NO" selected> Нет </option>
+    <option value="name"> Название объекта </option>
+    <option value="type"> Тип объекта </option>
+    <option value="Country"> Страна </option>
+    <option value="Year"> Год постройки </option>
+    <option value="Money" > Бюджет </option>
+    <option value="Floors"> Количество этажей </option>
+    <option value="flats"> Количество квартир </option>
+   </select>
+   по убыванию? <input type="checkbox" name="2lvl">
+   <br>
+
+   Третий уровень: <select name="3lvl">
+    <option value="NO" selected> Нет </option>
+    <option value="name"> Название объекта </option>
+    <option value="type"> Тип объекта </option>
+    <option value="Country"> Страна </option>
+    <option value="Year"> Год постройки </option>
+    <option value="Money" > Бюджет </option>
+    <option value="Floors"> Количество этажей </option>
+    <option value="flats"> Количество квартир </option>
+   </select>
+   по убыванию? <input type="checkbox" name="3lvl">
+   <br>
+
+   <p><input type="submit" value="Сортировать">
+   </p>
+
+</details>
+
+<p></p>
+<table border="2" cellspacing="0" cellpadding="7">
+  
+  <tr>
+    <th>Название ЖК</th>
+    <th>Тип объекта</th>
+    <th>Год постройки</th>
+    <th>Страна</th>
+    <th>Бюджет (млн)</th>
+    <th>Количество этажей</th>
+    <th>Количество квартир</th>
+  </tr>
+
+  <tr>
+    <td>ЖК Солнечный Берег</td>
+    <td>Кирпичный</td>
+    <td>2010</td>
+    <td>Россия</td>
+    <td>450</td>
+    <td>15</td>
+    <td>200</td>
+  </tr>
+
+  <tr>
+    <td>Green Tower</td>
+    <td>Монолитный</td>
+    <td>2020</td>
+    <td>США</td>
+    <td>1200</td>
+    <td>50</td>
+    <td>400</td>
+  </tr>
+
+  <tr>
+    <td>ЖК Лазурный</td>
+    <td>Панельный</td>
+    <td>2005</td>
+    <td>Казахстан</td>
+    <td>380</td>
+    <td>12</td>
+    <td>150</td>
+  </tr>
+
+  <tr>
+    <td>Skyline Residence</td>
+    <td>Монолитный</td>
+    <td>2022</td>
+    <td>Канада</td>
+    <td>900</td>
+    <td>40</td>
+    <td>350</td>
+  </tr>
+  
+  <tr>
+    <td>ЖК Радуга</td>
+    <td>Кирпичный</td>
+    <td>2015</td>
+    <td>Россия</td>
+    <td>600</td>
+    <td>20</td>
+    <td>220</td>
+  </tr>
+
+  <tr>
+    <td>Oceanview Towers</td>
+    <td>Панельный</td>
+    <td>2018</td>
+    <td>Австралия</td>
+    <td>1000</td>
+    <td>35</td>
+    <td>300</td>
+  </tr>
+
+  <tr>
+    <td>ЖК Светлый</td>
+    <td>Блочный</td>
+    <td>2024</td>
+    <td>Беларусь</td>
+    <td>320</td>
+    <td>10</td>
+    <td>120</td>
+  </tr>
+
+  <tr>
+    <td>Highrise Garden</td>
+    <td>Монолитный</td>
+    <td>2017</td>
+    <td>Германия</td>
+    <td>750</td>
+    <td>30</td>
+    <td>270</td>
+  </tr>
+
+  <tr>
+    <td>ЖК Южный Ветер</td>
+    <td>Панельный</td>
+    <td>2008</td>
+    <td>Китай</td>
+    <td>500</td>
+    <td>25</td>
+    <td>250</td>
+  </tr>
+
+  <tr>
+    <td>City Heights</td>
+    <td>Монолитный</td>
+    <td>2021</td>
+    <td>Италия</td>
+    <td>820</td>
+    <td>40</td>
+    <td>380</td>
+  </tr>
+
+  <tr>
+    <td>ЖК Восход</td>
+    <td>Кирпичный</td>
+    <td>2006</td>
+    <td>Франция</td>
+    <td>340</td>
+    <td>12</td>
+    <td>130</td>
+  </tr>
+
+  <tr>
+    <td>Palm Grove Residences</td>
+    <td>Монолитный</td>
+    <td>2019</td>
+    <td>Испания</td>
+    <td>970</td>
+    <td>45</td>
+    <td>400</td>
+  </tr>
+
+  <tr>
+    <td>ЖК Лесной</td>
+    <td>Блочный</td>
+    <td>2023</td>
+    <td>Польша</td>
+    <td>310</td>
+    <td>10</td>
+    <td>120</td>
+  </tr>
+
+  <tr>
+    <td>Urban Oasis</td>
+    <td>Монолитный</td>
+    <td>2020</td>
+    <td>ОАЭ</td>
+    <td>2000</td>
+    <td>55</td>
+    <td>450</td>
+  </tr>
+
+  <tr>
+    <td>ЖК Горизонт</td>
+    <td>Панельный</td>
+    <td>2014</td>
+    <td>Чехия</td>
+    <td>600</td>
+    <td>18</td>
+    <td>210</td>
+  </tr>
+
+  <tr>
+    <td>Lakeview Towers</td>
+    <td>Монолитный</td>
+    <td>2022</td>
+    <td>Япония</td>
+    <td>1200</td>
+    <td>48</td>
+    <td>380</td>
+  </tr>
+
+  <tr>
+    <td>ЖК Морской Бриз</td>
+    <td>Блочный</td>
+    <td>2021</td>
+    <td>Турция</td>
+    <td>420</td>
+    <td>22</td>
+    <td>240</td>
+  </tr>
+
+  <tr>
+    <td>Sky Horizon</td>
+    <td>Монолитный</td>
+    <td>2023</td>
+    <td>Мексика</td>
+    <td>890</td>
+    <td>36</td>
+    <td>300</td>
+  </tr>
+
+  <tr>
+    <td>ЖК Северное Сияние</td>
+    <td>Панельный</td>
+    <td>2016</td>
+    <td>Норвегия</td>
+    <td>750</td>
+    <td>28</td>
+    <td>280</td>
+  </tr>
+
+  <tr>
+    <td>Golden Tower</td>
+    <td>Монолитный</td>
+    <td>2024</td>
+    <td>Швейцария</td>
+    <td>1300</td>
+    <td>60</td>
+    <td>450</td>
+  </tr>
+
+  <tr>
+    <td>ЖК Лунный Свет</td>
+    <td>Кирпичный</td>
+    <td>2007</td>
+    <td>Южная Корея</td>
+    <td>400</td>
+    <td>14</td>
+    <td>180</td>
+</tr>
+
+<tr>
+    <td>Sunset Residences</td>
+    <td>Монолитный</td>
+    <td>2018</td>
+    <td>Нидерланды</td>
+    <td>950</td>
+    <td>38</td>
+    <td>360</td>
+</tr>
+
+<tr>
+    <td>ЖК Снежная Долина</td>
+    <td>Блочный</td>
+    <td>2013</td>
+    <td>Швеция</td>
+    <td>530</td>
+    <td>20</td>
+    <td>200</td>
+</tr>
+
+<tr>
+    <td>Mountain View Tower</td>
+    <td>Панельный</td>
+    <td>2019</td>
+    <td>Австрия</td>
+    <td>1100</td>
+    <td>42</td>
+    <td>370</td>
+</tr>
+
+<tr>
+    <td>ЖК Ясный Берег</td>
+    <td>Кирпичный</td>
+    <td>2011</td>
+    <td>Россия</td>
+    <td>470</td>
+    <td>18</td>
+    <td>230</td>
+</tr>
+
+<tr>
+    <td>Grand Horizon</td>
+    <td>Монолитный</td>
+    <td>2020</td>
+    <td>Индия</td>
+    <td>980</td>
+    <td>45</td>
+    <td>400</td>
+</tr>
+
+<tr>
+    <td>ЖК Ветер Перемен</td>
+    <td>Панельный</td>
+    <td>2009</td>
+    <td>Канада</td>
+    <td>580</td>
+    <td>22</td>
+    <td>250</td>
+</tr>
+
+<tr>
+    <td>Urban Skyline</td>
+    <td>Монолитный</td>
+    <td>2023</td>
+    <td>Ирландия</td>
+    <td>800</td>
+    <td>32</td>
+    <td>300</td>
+</tr>
+
+<tr>
+    <td>ЖК Солнечный Парк</td>
+    <td>Блочный</td>
+    <td>2016</td>
+    <td>Аргентина</td>
+    <td>440</td>
+    <td>15</td>
+    <td>180</td>
+</tr>
+
+<tr>
+    <td>Skyline Heights</td>
+    <td>Монолитный</td>
+    <td>2021</td>
+    <td>Великобритания</td>
+    <td>1300</td>
+    <td>50</td>
+    <td>420</td>
+</tr>
+
+<tr>
+    <td>ЖК Зеленый Луг</td>
+    <td>Кирпичный</td>
+    <td>2010</td>
+    <td>Испания</td>
+    <td>480</td>
+    <td>18</td>
+    <td>210</td>
+</tr>
+
+<tr>
+    <td>Crystal Peak</td>
+    <td>Монолитный</td>
+    <td>2022</td>
+    <td>Сингапур</td>
+    <td>1400</td>
+    <td>60</td>
+    <td>450</td>
+</tr>
+
+<tr>
+    <td>ЖК Летний Бриз</td>
+    <td>Блочный</td>
+    <td>2014</td>
+    <td>Бразилия</td>
+    <td>390</td>
+    <td>13</td>
+    <td>160</td>
+</tr>
+
+<tr>
+    <td>Sunrise Tower</td>
+    <td>Монолитный</td>
+    <td>2019</td>
+    <td>ЮАР</td>
+    <td>920</td>
+    <td>40</td>
+    <td>380</td>
+</tr>
+
+<tr>
+    <td>ЖК Северный Лес</td>
+    <td>Панельный</td>
+    <td>2005</td>
+    <td>Финляндия</td>
+    <td>510</td>
+    <td>16</td>
+    <td>190</td>
+</tr>
+
+<tr>
+    <td>Emerald Towers</td>
+    <td>Монолитный</td>
+    <td>2021</td>
+    <td>Новая Зеландия</td>
+    <td>1200</td>
+    <td>48</td>
+    <td>420</td>
+</tr>
+
+<tr>
+    <td>ЖК Золотая Осень</td>
+    <td>Кирпичный</td>
+    <td>2017</td>
+    <td>Россия</td>
+    <td>430</td>
+    <td>20</td>
+    <td>220</td>
+</tr>
+
+<tr>
+    <td>Lakeview Heights</td>
+    <td>Монолитный</td>
+    <td>2023</td>
+    <td>Филиппины</td>
+    <td>880</td>
+    <td>36</td>
+    <td>350</td>
+</tr>
+
+<tr>
+    <td>ЖК Алый Закат</td>
+    <td>Панельный</td>
+    <td>2015</td>
+    <td>Чили</td>
+    <td>670</td>
+    <td>25</td>
+    <td>280</td>
+</tr>
+
+<tr>
+    <td>Ocean Breeze Tower</td>
+    <td>Монолитный</td>
+    <td>2022</td>
+    <td>Португалия</td>
+    <td>1500</td>
+    <td>55</td>
+    <td>470</td>
+</tr>
+
+<tr>
+    <td>ЖК Лунный Сад</td>
+    <td>Блочный</td>
+    <td>2018</td>
+    <td>Греция</td>
+    <td>520</td>
+    <td>17</td>
+    <td>200</td>
+</tr>
+
+<tr>
+    <td>Golden Crest</td>
+    <td>Монолитный</td>
+    <td>2020</td>
+    <td>Израиль</td>
+    <td>1100</td>
+    <td>46</td>
+    <td>410</td>
+</tr>
+
+<tr>
+    <td>ЖК Лесная Гавань</td>
+    <td>Панельный</td>
+    <td>2008</td>
+    <td>Эстония</td>
+    <td>460</td>
+    <td>19</td>
+    <td>210</td>
+</tr>
+
+<tr>
+    <td>Sunlit Heights</td>
+    <td>Монолитный</td>
+    <td>2021</td>
+    <td>Таиланд</td>
+    <td>1250</td>
+    <td>50</td>
+    <td>430</td>
+</tr>
+
+<tr>
+    <td>ЖК Зимний Ветер</td>
+    <td>Кирпичный</td>
+    <td>2012</td>
+    <td>Исландия</td>
+    <td>500</td>
+    <td>16</td>
+    <td>200</td>
+</tr>
+
+<tr>
+    <td>Skyline Oasis</td>
+    <td>Монолитный</td>
+    <td>2024</td>
+    <td>Индонезия</td>
+    <td>900</td>
+    <td>40</td>
+    <td>380</td>
+</tr>
+
+<tr>
+    <td>ЖК Теплый Лес</td>
+    <td>Панельный</td>
+    <td>2013</td>
+    <td>Швейцария</td>
+    <td>590</td>
+    <td>22</td>
+    <td>260</td>
+</tr>
+
+<tr>
+    <td>Blue Horizon Tower</td>
+    <td>Монолитный</td>
+    <td>2020</td>
+    <td>Южная Африка</td>
+    <td>1400</td>
+    <td>55</td>
+    <td>470</td>
+</tr>
+
+<tr>
+    <td>ЖК Берег Неба</td>
+    <td>Кирпичный</td>
+    <td>2014</td>
+    <td>Польша</td>
+    <td>430</td>
+    <td>18</td>
+    <td>210</td>
+</tr>
+
+<tr>
+    <td>Sunrise Peaks</td>
+    <td>Монолитный</td>
+    <td>2023</td>
+    <td>Колумбия</td>
+    <td>950</td>
+    <td>42</td>
+    <td>400</td>
+</tr>
+</table>
+
+    </body>
+</html>
