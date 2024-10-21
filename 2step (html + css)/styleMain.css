@@ -1,7 +1,7 @@
 html, body {
     margin: 0; 
     padding: 0;
-  }
+}
 
 
 .menu {
@@ -21,15 +21,15 @@ html, body {
 .menu a { 
     color: black;
     text-decoration: none;
- }
+}
 
- a:hover {
+a:hover {
     color: rgb(0, 38, 255);
   }
   
-  #active {
+#active {
     color: rgb(101, 104, 255);
-    }
+}
 
 .menu p {
     white-space: nowrap;
@@ -41,6 +41,7 @@ html, body {
     overflow: hidden;
     margin: 2% 4%
 }
+
 .L {
     display: block;
     width: 49%;
@@ -48,8 +49,8 @@ html, body {
     overflow: hidden;
     clear:both;
     font-size: 1.5vw;
-
 }
+
 .R {
     width: 49%;
     float: right;
@@ -93,24 +94,22 @@ html, body {
 .Rblock_head {
     width: 55%;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     padding-left: 4%;
-    margin-top: 60px;
 }
 
-
 .Rblock_text {
-    font-size: 25px;
+    display: inline;
     text-align: justify;
+    vertical-align: bottom;
+    font-size: larger;
 }
 
 .fio {
-    margin-top: 35px;
+    vertical-align: 75%;
     font-size: 25px;
     float: left;
     white-space: nowrap;
-    position: relative;
-    left: 20px;
 }
         
 .mail {
@@ -120,11 +119,9 @@ html, body {
 }
   
 .contacts {
-    font-size: 25px;
-    margin-top: 35px;
+    font-size:25px;
+    vertical-align: 75%;
     float: right;
-    position: relative;
-    right: 20px;
 }
 
 .contacts a {
@@ -134,4 +131,4 @@ html, body {
 
 .contacts a:hover {
     color: rgb(0, 38, 255);
-  }
+}
