@@ -1,0 +1,191 @@
+/* Общие стили */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/head.jpg);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+}
+
+.menu .logo {
+    display: flex;
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+.menu-links {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    display: flex; 
+    gap: 15px; 
+}
+
+.menu-links a {
+    color: white;
+    background: rgba(70, 70, 70, 0.438);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px 10px; 
+}
+
+#active {
+    color: rgb(27, 187, 40);
+}
+
+/* Основной контент */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
+
+.L, .R {
+    flex: 1;
+    min-width: 300px;  
+}
+
+.Lcontainer {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    padding: 15px;
+}
+
+.Limg {
+    width: 50%; 
+    max-width: 500px; 
+    height: auto; 
+    max-height: 882px;
+    object-fit: cover;
+}
+
+.Ltext {
+    flex: 1; 
+    text-align: justify;
+}
+
+.Ltext {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.Rblock {
+    display: flex; 
+    gap: 20px; 
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+.Rblock_img {
+    width: 300px; 
+    height: auto; 
+    object-fit: cover;
+    flex-shrink: 0; 
+}
+
+.Rcontent {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.Rcontent h3 {
+    margin: 0;
+    align-self: flex-start; 
+}
+
+.Rcontent p {
+    margin: 10px 0 0 0;
+    text-align: justify;
+    width: 100%; 
+}
+
+/* Подвал */
+.mail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+}
+
+.fio {
+    flex: 1;
+    text-align: left;
+}
+
+.contacts {
+    flex: 1;
+    text-align: right;
+}
+
+.contacts a {
+    color: black;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    color: rgb(0, 38, 255);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+
+    .content {
+        flex-direction: column;
+    }
+
+    .Rblock {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Rblock_img {
+        width: 80%;
+    }
+
+    .mail {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        display: none; 
+    }
+
+    .content {
+        gap: 10px;
+    }
+
+    .Rblock_img {
+        width: 100%;
+    }
+}
