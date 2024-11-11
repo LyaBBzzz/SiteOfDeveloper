@@ -12,10 +12,11 @@ html, body {
     align-items: center;
     justify-content: center;
     background-image: url(images/head.jpg);
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px;
     height: 200px;
+    margin-top: -20px;
 }
 
 .menu .logo {
@@ -178,8 +179,30 @@ html, body {
 
 @media (max-width: 480px) {
     .menu {
-        display: none; 
+        background-image: none;
     }
+
+    .menu-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        }
+       
+       .menu-links a {
+        flex: 1;
+        text-align: center;
+        padding: 5px 10px;
+        }
+       
+       .menu-links a:nth-child(2n) {
+        margin-right: 0;
+        }
+       
+       .menu-links a:nth-child(2n + 1) {
+        margin-right: 10px;
+        }
 
     .content {
         gap: 10px;
@@ -187,5 +210,9 @@ html, body {
 
     .Rblock_img {
         width: 100%;
+    }
+
+    .Limg {
+        margin: auto;
     }
 }
