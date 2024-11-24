@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт застройщика</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!---шапка-->
+    <header>
+        <nav class="navbar navbar-expand-md bg-light navbar-light ps-3 pe-3" >
+
+            <a class="navbar-brand fw-bold" href="#">LeoDevelopment</a>
+
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link bg-dark bg-opacity-50 rounded active mx-2 mb-2 text-center " href="#">Наши объекты</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link bg-dark bg-opacity-50 rounded mx-2 mb-2 text-center" href="#">Информация</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link bg-dark bg-opacity-50 rounded mx-2 mb-2 text-center" href="#">ЖК "Улисс-360"</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link bg-dark bg-opacity-50 rounded mx-2 mb-2 text-center" href="#">ЖК "Фиолент"</a>
+                    </li>
+                </ul>
+            </header>
+    
+            <!---карусель-->
+            <div
+            id="gallery"
+            class="carousel slide carousel-dark"
+            data-bs-ride="carousel">
+
+               <div class="carousel-inner">
+                   <div class="carousel-item active">
+                       <img src="images/car.webp" class="d-block mx-auto" alt="">
+                   </div>
+           
+                   <div class="carousel-item ">
+                       <img src="images/car2.jpg" class="d-block mx-auto" alt="">
+                   </div>
+           
+                   <div class="carousel-item">
+                       <img src="images/car3.webp" class="d-block mx-auto" alt="">
+                   </div>
+               </div>
+           
+           <button
+           class="carousel-control-prev"
+           type="button"
+           data-bs-target="#gallery"
+           data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           
+               <span class="visually-hidden">Предыдущий</span>
+           </button>
+           
+           <button
+           class="carousel-control-next"
+           type="button"
+           data-bs-target="#gallery"
+           data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               
+               <span class="visually-hidden">Следующий</span>
+           </button>
+           </div>
+           </div>
+
+
+           <!---Блок с контентом-->
+           <main class="container-fluid mt-4">
+            <div class="row">
+                <!-- Левый блок -->
+                <section class="col-lg-8 mb-4">
+                    <div class="d-flex bg-light border p-3 rounded">
+                        
+                        <img class="img-fluid rounded me-4 w-50" src="images/aboba.jpg" alt="ЖК Бульвар">
+                        <div>
+                            <h3 >ЖК "Бульвар", Москва</h3>
+                            <p>Расположен в Обручевском районе Юго-Западного административного округа Москвы, на улице Академика Волгина, владение 2. Строительство ведётся на месте бывшего бетонного завода компании ГК «Партнёр». Площадь застройки составляет 1,69 га. Территория комплекса с севера ограничена улицей Обручева, а с юга к ней примыкает студенческий городок Губкинского университета нефти и газа. Ближайшая станция метро — «Калужская». Фасады ЖК «Архитектор» выполнены в виде объёмных геометрических панелей, которые создают визуальный эффект многослойности зданий. Они выполнены с чередованием фактур: меди, матового металла и травертина — декоративного отделочного камня. Такое решение вдохновлено творчеством художника Маурица Эшера. Всего в комплексе будет 1421 квартира площадью от 29 до 252 м². Есть варианты от студий до многокомнатных пентхаусов и двухуровневых квартир. Предлагается 64 вида планировок: как традиционных, с квадратными и прямоугольными помещениями, так и нестандартных, с выступающими углами комнат и лоджий, а также с угловым остеклением. Высота квартир составляет 3,15 м.</p>
+                        </div>
+                    </div>
+                </section>
+        
+                <!--Правые блоки-->
+                <section class="col-lg-4">
+                    <article class="mb-4">
+                        <div class="d-flex flex-column bg-light border p-3 rounded">
+                            <img class="img-fluid rounded" src="images/1.jpg" alt="ЖК ChinaTown">
+                            <div class="mt-3">
+                                <h3>ЖК "ChinaTown", Нью-Йорк</h3>
+                                <p>Жилой комплекс "ChinaTown" расположен в экологически чистом районе города, окружённом зелёными насаждениями и парками. Комплекс состоит из нескольких многоэтажных домов, построенных с использованием современных технологий и материалов. На территории комплекса расположены детские и спортивные площадки, зоны отдыха и прогулок, а также магазины, кафе и другие объекты инфраструктуры.</p>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="mb-4">
+                        <div class="d-flex flex-column bg-light border p-3 rounded">
+                            <img class="img-fluid rounded" src="images/2.jpg" alt="ЖК Улисс 360">
+                            <div class="mt-3">
+                                <h3>ЖК "Улисс 360", Владивосток</h3>
+                                <p>Жилой комплекс «Улисс 360» расположен в живописном месте на берегу реки, окружённом зелёными насаждениями и парками. Комплекс состоит из нескольких малоэтажных домов, построенных с использованием экологически чистых материалов и технологий.</p>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="mb-4">
+                        <div class="d-flex flex-column bg-light border p-3 rounded">
+                            <img class="img-fluid rounded" src="images/4.jpg" alt="ЖК Улисс 360">
+                            <div class="mt-3">
+                                <h3>ЖК "Улисс 360", Владивосток</h3>
+                                <p>Жилой комплекс «Улисс 360» расположен в живописном месте на берегу реки, окружённом зелёными насаждениями и парками. Комплекс состоит из нескольких малоэтажных домов, построенных с использованием экологически чистых материалов и технологий.</p>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="mb-4">
+                        <div class="d-flex flex-column bg-light border p-3 rounded">
+                            <img class="img-fluid rounded" src="images/5.jpg" alt="ЖК Олимпиец">
+                            <div class="mt-3">
+                                <h3>ЖК "Олимпиец", Олимп</h3>
+                                <p>Жилой комплекс «Олимпиец» расположен в тихом и уютном районе города, вдали от шумных магистралей и городской суеты. Комплекс состоит из нескольких малоэтажных домов, построенных с использованием современных технологий и материалов.</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </main>
+
+   
+    <!---футтер-->
+    <footer class="mail bg-light py-3">
+        <div class="container d-flex justify-content-between">
+            <div class="fio">&copy; Климанов Д.В., группа 5, 2024-2025</div>
+            <div class="contacts">✉ <a href="#" class="text-dark">Контакты</a></div>
+        </div>
+    </footer>
+    
+</body>
+</html>
